@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "pid": null,
+    "name": "Gerencia",
+    "role": "Dirección General",
+    "department": "Gerencia",
+    "tags": ["gerencia"]
+  },
+
+  {
+    "id": 2,
+    "pid": 1,
+    "name": "Almacén",
+    "role": "Área Operativa",
+    "department": "Operativo",
+    "tags": ["administracion"]
+  },
+  {
+    "id": 3,
+    "pid": 1,
+    "name": "Administración",
+    "role": "Gestión Administrativa",
+    "department": "Administración",
+    "tags": ["administracion"]
+  },
+  {
+    "id": 4,
+    "pid": 1,
+    "name": "HSEQ",
+    "role": "Seguridad y Calidad",
+    "department": "HSEQ",
+    "tags": ["administracion"]
+  },
+
+  {
+    "id": 5,
+    "pid": 3,
+    "name": "Coordinación",
+    "role": "Gestión de Operaciones",
+    "department": "Coordinación",
+    "tags": ["coordinacion"]
+  },
+
+ 
+  {
+    "id": 6,
+    "pid": 5,
+    "name": "Cuadrilla (Caso 1)",
+    "role": "Equipo de trabajo",
+    "department": "Operativo",
+    "tags": ["operativo"]
+  },
+  {
+    "id": 7,
+    "pid": 6,
+    "name": "1 Vehículo",
+    "role": "Unidad principal",
+    "department": "Operativo",
+    "tags": ["operativo"]
+  },
+
+  {
+    "id": 8,
+    "pid": 7,
+    "name": "Moto 1",
+    "role": "Unidad",
+    "department": "Operativo",
+    "tags": ["operativo"]
+  },
+  {
+    "id": 9,
+    "pid": 7,
+    "name": "Moto 2",
+    "role": "Unidad",
+    "department": "Operativo",
+    "tags": ["operativo"]
+  },
+  {
+    "id": 10,
+    "pid": 7,
+    "name": "Moto 3",
+    "role": "Unidad",
+    "department": "Operativo",
+    "tags": ["operativo"]
+  },
+  {
+    "id": 11,
+    "pid": 7,
+    "name": "Moto 4",
+    "role": "Unidad",
+    "department": "Operativo",
+    "tags": ["operativo"]
+  },
+
+  
+  {
+    "id": 12,
+    "pid": 5,
+    "name": "Cuadrilla (Caso 2)",
+    "role": "Equipo de trabajo",
+    "department": "Operativo",
+    "tags": ["operativo"]
+  },
+  {
+    "id": 13,
+    "pid": 12,
+    "name": "Vehículo + Moto",
+    "role": "Unidad mixta",
+    "department": "Operativo",
+    "tags": ["operativo"]
+  },
+
+  {
+    "id": 14,
+    "pid": 13,
+    "name": "Moto 1",
+    "role": "Unidad",
+    "department": "Operativo",
+    "tags": ["operativo"]
+  },
+  {
+    "id": 15,
+    "pid": 13,
+    "name": "Moto 2",
+    "role": "Unidad",
+    "department": "Operativo",
+    "tags": ["operativo"]
+  },
+  {
+    "id": 16,
+    "pid": 13,
+    "name": "Moto 3",
+    "role": "Unidad",
+    "department": "Operativo",
+    "tags": ["operativo"]
+  },
+  {
+    "id": 17,
+    "pid": 13,
+    "name": "Moto 4",
+    "role": "Unidad",
+    "department": "Operativo",
+    "tags": ["operativo"]
+  }
+]

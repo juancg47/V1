@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organigrama Operativo</title>
+    <style>
+        :root {
+            --gerencia: #0b457e;
+            --areas: #463c8a;
+            --coord: #004d3d;
+            --vehiculo: #6d3f08;
+            --moto: #444;
+            --line: #ccc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .org-container {
+            text-align: center;
+            max-width: 1000px;
+        }
+
+        .box {
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 10px;
+            min-width: 140px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Colores por nivel */
+        .bg-gerencia { background-color: var(--gerencia); font-weight: bold; font-size: 1.2em; }
+        .bg-areas { background-color: var(--areas); }
+        .bg-coord { background-color: var(--coord); }
+        .bg-vehiculo { background-color: var(--vehiculo); }
+        .bg-moto { background-color: var(--moto); font-size: 0.85em; padding: 10px; min-width: 80px; }
+
+        .flex-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .vertical-line {
+            width: 2px;
+            height: 20px;
+            background-color: var(--line);
+            margin: 0 auto;
+        }
+
+        .connector-group {
+            border-top: 2px solid var(--line);
+            margin-top: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .case-container {
+            border: 1px dashed #bbb;
+            padding: 15px;
+            border-radius: 10px;
+            background: white;
+        }
+
+        h4 { margin: 5px 0; color: #555; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+<div class="org-container">
+    
+    <!-- NIVEL 1 -->
+    <div class="bg-gerencia box">GERENCIA</div>
+    <div class="vertical-line"></div>
+
+    <!-- NIVEL 2 -->
+    <div class="connector-group" style="width: 80%; margin: 0 auto;">
+        <div style="width: 33%"><div class="vertical-line"></div><div class="bg-areas box">Almacén</div></div>
+        <div style="width: 33%"><div class="vertical-line"></div><div class="bg-areas box">Administración</div></div>
+        <div style="width: 33%"><div class="vertical-line"></div><div class="bg-areas box">HSEQ</div></div>
+    </div>
+
+    <!-- NIVEL 3: Coordinación (Sale de Administración) -->
+    <div style="margin-left: 0;">
+        <div class="vertical-line" style="margin-right: 50%;"></div>
+        <div class="bg-coord box">Coordinación</div>
+    </div>
+    <div class="vertical-line"></div>
+
+    <!-- NIVEL 4: Casos de Cuadrilla -->
+    <div class="flex-row">
+        
+        <!-- CASO 1 -->
+        <div class="case-container">
+            <h4>Cuadrilla (Caso 1)</h4>
+            <div class="bg-vehiculo box">1 Vehículo</div>
+            <div class="vertical-line"></div>
+            <div class="flex-row" style="gap: 10px;">
+                <div class="bg-moto box">Moto 1</div>
+                <div class="bg-moto box">Moto 2</div>
+                <div class="bg-moto box">Moto 3</div>
+                <div class="bg-moto box">Moto 4</div>
+            </div>
+        </div>
+
+        <!-- CASO 2 -->
+        <div class="case-container">
+            <h4>Cuadrilla (Caso 2)</h4>
+            <div class="bg-vehiculo box">Vehículo + Moto</div>
+            <div class="vertical-line"></div>
+            <div class="flex-row" style="gap: 10px;">
+                <div class="bg-moto box">Moto 1</div>
+                <div class="bg-moto box">Moto 2</div>
+                <div class="bg-moto box">Moto 3</div>
+                <div class="bg-moto box">Moto 4</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Organigrama Corporativo</title>
+
+<script src="https://balkan.app/js/OrgChart.js"></script>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial;
+    background: #f4f6f8;
+}
+
+/* Barra superior */
+#navbar {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    background: #1d2226;
+}
+
+/* Tabs */
+.tab {
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: #2d3338;
+    transition: 0.2s;
+}
+
+.tab:hover {
+    background: #0a66c2;
+}
+
+.tab.active {
+    background: #0a66c2;
+}
+
+/* Organigrama */
+#tree {
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+/* Error */
+#error {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    background: #ffdddd;
+    padding: 10px;
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div id="navbar"></div>
+<div id="error"></div>
+<div id="tree"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
